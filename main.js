@@ -3,6 +3,16 @@ const printToDom = (id, text) => {
   document.querySelector(id).innerHTML = text;
 }
 
+//update HP
+const updateHp = (dinoId, amount) => {
+  const dino = dinos.find(dino => dino.id === dinoId);
+  if (dino.health + amount > 100) {
+    dino.health = 100;
+  } else {
+    dino.health = dino.health + amount;
+  }
+}
+
 // dino kennel cards
 const dinoKennel = () => {
   let domString = '';
