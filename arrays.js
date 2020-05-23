@@ -3,7 +3,7 @@ const dinos = [
   {
     id: 'dino1',
     name: 'Rex',
-    type: 'T Rex',
+    type: 'T-Rex',
     age: 100,
     owner: 'Matt',
     adventures: [],
@@ -23,7 +23,7 @@ const dinos = [
   {
     id: 'dino3',
     name: 'Susan',
-    type: 'stegosaurus',
+    type: 'Stegosaurus',
     age: 55,
     owner: 'Luke',
     adventures: [],
@@ -39,7 +39,7 @@ const dinos = [
     adventures: [],
     health: 100,
     imageUrl: 'https://lh3.googleusercontent.com/proxy/_rJSL88ErOEvgHl5SInWOEolOdikwIMcKWPv9iqZzt3IUkD33WdG6d9qd8TmNJFSiszTXm7JeGQPocmB_BZErKxt__25LOpW75dmnVuy0nuY0PatX2cIYA-C'
-  },,
+  },
   {
     id: 'dino5',
     name: 'Steph',
@@ -83,7 +83,7 @@ const dinos = [
   {
     id: 'dino9',
     name: 'Betty',
-    type: 'brontosaurus',
+    type: 'Brontosaurus',
     age: 22,
     owner: 'Matt',
     adventures: [],
