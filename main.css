@@ -1,0 +1,20 @@
+body {
+  padding: 5vw;
+}
+
+.card {
+  width: 30%;
+  margin: 1rem;
+}
+
+.card img {
+  height: 30vh;
+  object-fit: scale-down;
+  object-position: center;
+}
+
+.hp { 
+  position: absolute;
+  top: 25vh;
+  right: 10px;
+}
