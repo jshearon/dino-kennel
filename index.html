@@ -9,7 +9,50 @@
 </head>
 <body>
 
-  <div id="dino-kennel" class="d-flex flex-wrap"></div>
+  <header class="w-100 text-center">
+    <h1 class="w-100 text-center">Dino Kennel</h1>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#add-dino" aria-expanded="false" aria-controls="collapseExample">
+      Add a new dino
+    </button>
+    <br>
+    <div class="collapse w-25 mx-auto mt-2" id="add-dino">
+      <div class="card card-body mx-auto">
+        <form id="add-dino-form" class="form-horizontal">
+          <div class="form-group row">
+            <label for="name" class="control-label col-sm-4">Dino's Name</label>
+            <input type="text" class="form-control col-sm-6" id="name" placeholder="Steggy">
+          </div>
+          <div class="form-group row">
+            <label for="age" class="control-label col-sm-4">Dino's Age</label>
+            <input type="text" class="form-control col-sm-2" id="age" placeholder="100">
+          </div>
+          <div class="form-group row">
+            <label for="type" class="control-label col-sm-4">Dino Type</label>
+            <select class="form-control col-sm-6" id="type">
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="owner" class="control-label col-sm-4">Dino Owner</label>
+            <select class="form-control col-sm-6" id="owner">
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="walk" class="control-label col-sm-4">Dino Walk Direction</label>
+            <select class="form-control col-sm-6" id="walk">
+              <option value="dino-walk-left">Left</option>
+              <option value="dino-walk-right">Right</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="image" class="control-label col-sm-4">Dino's Image</label>
+            <input type="text" class="form-control col-sm-6" id="image">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <div id="dino-kennel" class="d-flex flex-wrap justify-content-center"></div>
 
   <script src="arrays.js"></script>
   <script src="main.js"></script>

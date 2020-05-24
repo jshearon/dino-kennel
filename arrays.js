@@ -8,7 +8,8 @@ const dinos = [
     owner: 'Matt',
     adventures: [],
     health: 92,
-    imageUrl: 'https://www.fieldandstream.com/resizer/8xkluKAxQZsEHJKj6qwyU0mLhTo=/760x448/filters:focal(458x270:459x271)/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/TQFN3CD5DAEM4DL2ACD42ZJ5E4.png'
+    imageUrl: 'https://www.fieldandstream.com/resizer/8xkluKAxQZsEHJKj6qwyU0mLhTo=/760x448/filters:focal(458x270:459x271)/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/TQFN3CD5DAEM4DL2ACD42ZJ5E4.png',
+    walk: 'dino-walk-right'
   },
   {
     id: 'dino2',
@@ -18,7 +19,8 @@ const dinos = [
     owner: 'Michael',
     adventures: [],
     health: 1,
-    imageUrl: 'https://i.ebayimg.com/images/g/61UAAOSweNpdmtI2/s-l640.png'
+    imageUrl: 'https://i.ebayimg.com/images/g/61UAAOSweNpdmtI2/s-l640.png',
+    walk: 'dino-walk-left'
   },
   {
     id: 'dino3',
@@ -28,7 +30,8 @@ const dinos = [
     owner: 'Luke',
     adventures: [],
     health: 0,
-    imageUrl: 'https://cdn.mos.cms.futurecdn.net/owYTb9X5fKpeBhgiaxD73b-320-80.jpg'
+    imageUrl: 'https://cdn.mos.cms.futurecdn.net/owYTb9X5fKpeBhgiaxD73b-320-80.jpg',
+    walk: 'dino-walk-right'
   },
   {
     id: 'dino4',
@@ -38,7 +41,8 @@ const dinos = [
     owner: 'Matt',
     adventures: [],
     health: 100,
-    imageUrl: 'https://lh3.googleusercontent.com/proxy/_rJSL88ErOEvgHl5SInWOEolOdikwIMcKWPv9iqZzt3IUkD33WdG6d9qd8TmNJFSiszTXm7JeGQPocmB_BZErKxt__25LOpW75dmnVuy0nuY0PatX2cIYA-C'
+    imageUrl: 'https://drawinghowtos.com/wp-content/uploads/2019/05/Brontosaurus-colored.png',
+    walk: 'dino-walk-left'
   },
   {
     id: 'dino5',
@@ -48,7 +52,8 @@ const dinos = [
     owner: 'Matt',
     adventures: [],
     health: 75,
-    imageUrl: 'https://cdn1.bigcommerce.com/n-yp39j5/ujq6o/products/1060/images/2390/Papo_Spinosaurus_2019_DansDinosaurs__69805.1552618774.1280.1280.jpg?c=2'
+    imageUrl: 'https://cdn1.bigcommerce.com/n-yp39j5/ujq6o/products/1060/images/2390/Papo_Spinosaurus_2019_DansDinosaurs__69805.1552618774.1280.1280.jpg?c=2',
+    walk: 'dino-walk-left'
   },
   {
     id: 'dino6',
@@ -58,7 +63,8 @@ const dinos = [
     owner: 'Matt',
     adventures: [],
     health: 55,
-    imageUrl: 'https://vignette.wikia.nocookie.net/dinosaurs/images/2/2b/TalarurusInfobox.png/revision/latest/scale-to-width-down/340?cb=20150512165226'
+    imageUrl: 'https://vignette.wikia.nocookie.net/dinosaurs/images/2/2b/TalarurusInfobox.png/revision/latest/scale-to-width-down/340?cb=20150512165226',
+    walk: 'dino-walk-left'
   },
   {
     id: 'dino7',
@@ -68,7 +74,8 @@ const dinos = [
     owner: 'Matt',
     adventures: [],
     health: 0,
-    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/81Wsvp2M7iL._AC_SX425_.jpg'
+    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/81Wsvp2M7iL._AC_SX425_.jpg',
+    walk: 'dino-walk-left'
   },
   {
     id: 'dino8',
@@ -78,7 +85,8 @@ const dinos = [
     owner: 'Michael',
     adventures: [],
     health: 10,
-    imageUrl: 'https://images.dinosaurpictures.org/3_pterodactyl_63be.jpg'
+    imageUrl: 'https://images.dinosaurpictures.org/3_pterodactyl_63be.jpg',
+    walk: 'dino-walk-left'
   },
   {
     id: 'dino9',
@@ -88,7 +96,8 @@ const dinos = [
     owner: 'Matt',
     adventures: [],
     health: 22,
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOdrC7hlvBawFQ7g8vgwHcfQphX5WfeN2bth0dvc4M2oxNGdSD'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOdrC7hlvBawFQ7g8vgwHcfQphX5WfeN2bth0dvc4M2oxNGdSD',
+    walk: 'dino-walk-right'
   }
 ];
 
