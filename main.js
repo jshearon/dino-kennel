@@ -15,20 +15,22 @@ const updateHp = (dinoId, amount) => {
   }
 }
 
-//add dino form
+//process dino form
 const addDino = (e) => {
   e.preventDefault();
+  const input = e.target.elements;
   const newDino = {
     id: new Date(),
-    name: e.target.elements.name.value,
-    type: e.target.elements.type.value,
-    age: e.target.elements.age.value,
-    owner: e.target.elements.owner.value,
+    name: input.name.value,
+    type: input.type.value,
+    age: input.age.value,
+    owner: input.owner.value,
     adventures: [],
     health: 50,
-    imageUrl: e.target.elements.image.value,
-    walk: e.target.elements.walk.value
+    imageUrl: input.image.value,
+    walk: input.walk.value
   };
+  $('#add-dino').collapse('hide');
   dinos.push(newDino);
   dinoKennel();
 }
@@ -55,7 +57,12 @@ const dinoKennel = () => {
                       }
     domString +=     `</ul>
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Feed ${dinos[i].name}"><i class="fas fa-cookie-bite fa-2x"></i></button>
+                      <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Send ${dinos[i].name} to Hostpital"><i class="fas fa-hospital fa-2x"></i></button>
+                      <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Pet ${dinos[i].name}"><i class="fas fa-hand-paper fa-2x"></i></button>
+                      <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Send ${dinos[i].name} on an Advenure"><i class="fas fa-suitcase fa-2x"></i></button>
+                    </div>    
                   </div>
                 </div>`
     }
@@ -82,7 +89,11 @@ const listeners = () => {
   document.getElementById("add-dino-form").addEventListener('submit', addDino);
 }
 
-// init
+// show tootips
+$(document).ready(function() {
+  $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+
 const init = () => {
   dinoKennel();
   populateForm();
